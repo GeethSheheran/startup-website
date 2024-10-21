@@ -4,11 +4,13 @@ import Section from "../components/Section";
 
 const collabContent = [
     {
-        title: "Seamless Integration",
-        text: "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.",
+        title: "Driving Innovation with Cutting-Edge Technology",
+        // text: "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.",
     },
-    { title: "Smart Automation" },
-    { title: "Top-notch Security" },
+    { title: "Enhancing Efficiency and Productivity" },
+    { title: "Delivering Exceptional User Experiences" },
+    { title: "Data Security and Privacy Assurance" },
+    { title: "Commitment to Sustainability and Ethical Practices" },
 ];
 
 const collabApps = [
@@ -66,8 +68,8 @@ const Collaboration = () => {
     return (
         <Section crosses>
             <div className="container lg:flex">
-                <div className="max-w-[25rem]">
-                    <h2 className="h2 mb-4 md:mb-8">AI Chat App for seamless collaboration</h2>
+                <div className="max-w-[45rem]">
+                    <h2 className="h2 mb-4 md:mb-8">Empowering Development Through Technology</h2>
 
                     <ul className="max-w-[22rem] mb-10 md:mb-14">
                         {collabContent.map((item, i) => (
@@ -81,20 +83,20 @@ const Collaboration = () => {
                         ))}
                     </ul>
 
-                    <Button>
+                    {/* <Button>
                         Try it now
-                    </Button>
+                    </Button> */}
 
                 </div>
 
-                <div className="lg:ml-auto xl:w-[38rem] mt-4">
-                    <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.</p>
+                <div className="lg:ml-auto xl:w-[48rem] mt-4">
+                    <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-42 lg:w-[32rem] lg:mx-auto">we are committed to leveraging the latest technologies to build applications that drive results. Our expertise in these tools allows us to create innovative solutions that empower businesses to thrive in the digital landscape. Whether you're looking to develop a new application or enhance an existing one, our team is here to help you achieve your goals with cutting-edge technology.</p>
 
                     <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
                         <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
                             <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                                    <img src={openai} width={48} height={48} alt="OpenAI" />
+                                    <img src={openai} width={48} height={48} alt="ceriture" />
                                 </div>
                             </div>
                         </div>
