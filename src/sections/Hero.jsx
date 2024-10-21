@@ -57,15 +57,15 @@ const Hero = () => {
             <div className="container relative" ref={parallaxRef}>
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
-                        Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
+                    Creativity through&nbsp;&nbsp; {` `}
                         <span className="inline-block relative">
-                            OpenAI <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
+                        1s and 0s <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
                         </span>
                     </h1>
-                    <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">Unleash the power of AI within OpenAI. Upgrade your productivity with OpenAI, the open AI chat app.</p>
-                    <Button href="#pricing" white>
+                    <p className="body-1 text-[12px] max-w-6xl mx-auto mb-6 text-n-2 lg:mb-8">Welcome to Ceriture, where innovation meets expertise. At our core, we are a dynamic software, web, mobile development, and brand development company committed to transforming your digital presence. We blend creativity with technology, crafting solutions that not only meet your needs but also inspire and engage. Whether you're a startup, an established business, or a general business owner, we're here to turn your vision into reality with professionalism and creativity. Dive deeper to learn about our journey and how we can partner with you for success.</p>
+                    {/* <Button href="#pricing" white>
                         Get started
-                    </Button>
+                    </Button> */}
                 </div>
                 <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
                     <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
