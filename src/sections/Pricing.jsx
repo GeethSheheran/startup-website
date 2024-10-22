@@ -6,6 +6,7 @@ import Heading from "../components/Heading";
 import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
+import image4 from "../assets/4.png";
 
 const pricing = [
     {
@@ -20,7 +21,7 @@ const pricing = [
     },
     {
         title: "Enterprise",
-        image: image2, // Same image as Premium, replace if needed
+        image: image4, // Same image as Premium, replace if needed
         description: "Custom AI chatbot, advanced analytics, dedicated account",
     },
     {
