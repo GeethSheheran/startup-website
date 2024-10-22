@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <Section id="technologies">
             <div className="container">
-                <Heading title="HumAIn approach" text="Ceriture unlocks the potential of AI-powered applications" />
+                <Heading title="HumAIn Approach" text="Ceriture unlocks the potential of AI-powered applications" />
 
                 <div className="relative">
                     <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-white/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
@@ -38,7 +38,7 @@ const Services = () => {
 
                         <div className="flex items-center h-[3.5rem] px-6 bg-n-8/80 rounded-[1.7rem] absolute left-4 right-4 bottom-4 border-white/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2 text-base">
                             <img className="w-5 h-5 mr-4" src={loading} alt="" />
-                            AI is generating
+                            Generating HumAIn
                         </div>
                     </div>
 
