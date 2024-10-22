@@ -6,6 +6,7 @@ import Hero from "./sections/Hero";
 import Pricing from "./sections/Pricing";
 import Roadmap from "./sections/Roadmap";
 import Services from "./sections/Services";
+import Contact from "./sections/Contact";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Collaboration />
                 <Pricing />
                 <Roadmap />
+                <Contact/>
                 <Footer />
             </div>
         </>

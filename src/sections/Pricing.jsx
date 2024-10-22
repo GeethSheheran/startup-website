@@ -2,26 +2,30 @@ import Section from "../components/Section";
 import { smallSphere, stars, lines } from "../assets"; // Replace with appropriate paths for your images
 import Heading from "../components/Heading";
 
-// Add image sources for each pricing card
+// Import images directly or dynamically
+import image1 from "../assets/1.png";
+import image2 from "../assets/2.png";
+import image3 from "../assets/3.png";
+
 const pricing = [
     {
         title: "Basic",
-        image: "../assets/basic.png", // Replace with your image path
+        image: image1, // Imported image
         description: "AI chatbot, personalized recommendations",
     },
     {
         title: "Premium",
-        image: "../assets/premium.png", // Replace with your image path
+        image: image2, // Imported image
         description: "Advanced AI chatbot, priority support, analytics dashboard",
     },
     {
         title: "Enterprise",
-        image: "../assets/enterprise.png", // Replace with your image path
+        image: image2, // Same image as Premium, replace if needed
         description: "Custom AI chatbot, advanced analytics, dedicated account",
     },
     {
         title: "Ultimate",
-        image: "../assets/ultimate.png", // Replace with your image path
+        image: image3, // Imported image
         description: "Full AI customization, enterprise support, unlimited analytics",
     },
 ];

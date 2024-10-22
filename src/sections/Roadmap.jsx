@@ -1,7 +1,6 @@
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
-import Tagline from "../components/Tagline";
 
 const testimonials = [
     {
@@ -32,10 +31,10 @@ const testimonials = [
 
 const Testimonials = () => (
     <Section className="overflow-hidden" id="testimonials">
-        <div className="container md:pb-10">
+        <div className="container">
             <Heading tag="Client Testimonials" title="What our clients say" />
 
-            <div className="grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+            <div className="grid gap-6 md:grid-cols-2 md:gap-4">
                 {testimonials.map((item) => (
                     <div className="p-[1px] bg-n-6 rounded-lg shadow-md" key={item.id}>
                         <div className="p-4 bg-n-8 rounded-lg">
@@ -47,7 +46,7 @@ const Testimonials = () => (
                 ))}
             </div>
 
-            <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+            <div className="flex justify-center mt-12">
                 {/* <Button href="#testimonials">View more testimonials</Button> */}
             </div>
         </div>
