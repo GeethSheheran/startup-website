@@ -98,7 +98,7 @@ const Hero = () => {
                                 </ScrollParallax>
 
                                 <ScrollParallax isAbsolutelyPositioned>
-                                    <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" title="Code generation" />
+                                    <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" title="Team Support" />
                                 </ScrollParallax>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ const Hero = () => {
                     <BackgroundCircles />
                 </div>
 
-                <div className="hidden relative z-10 mt-20 lg:block">
+                {/* <div className="hidden relative z-10 mt-20 lg:block">
                     <h5 className="tagline mb-6 text-center text-white/50">Helping people create beautiful content at</h5>
                     <ul className="flex">
                         <li className="flex items-center justify-center flex-1 h-[8.5rem]">
@@ -129,7 +129,7 @@ const Hero = () => {
                             <img src={yourlogo} width={134} height={28} alt="" />
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block" />

@@ -40,9 +40,7 @@ const Services = () => {
                             <img className="w-5 h-5 mr-4" src={loading} alt="" />
                             Generating HumAIn
                         </div>
-                    </div>
-
-                   
+                    </div>                 
                 </div>
             </div>
         </Section>
