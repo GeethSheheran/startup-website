@@ -1,9 +1,37 @@
 import Section from "../components/Section";
 import Heading from "../components/Heading";
-import { service1, service2, loading } from "../assets";
-import ChatBubbleWing from "../assets/svg/ChatBubbleWing";
+import { service1, service2 } from "../assets";
+import { useState } from "react";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const [status, setStatus] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.send('service_fmop7ug', 'template_0lggbp6', formData, 'CF04jMEWrSfLkn4wv')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setStatus('Message sent successfully!');
+                setFormData({ name: '', email: '', message: '' }); // Clear the form
+            }, (err) => {
+                console.error('FAILED...', err);
+                setStatus('Error sending message. Please try again.');
+            });
+    };
+
     return (
         <Section id="contact">
             <div className="container">
@@ -18,11 +46,14 @@ const Contact = () => {
 
                         <div className="relative z-1 max-w-[40rem]">
                             <h4 className="h4 mb-4">Contact Us</h4>
-                            <form className="space-y-4">
+                            <form className="space-y-4" onSubmit={handleSubmit}>
                                 <div>
                                     <label className="block text-sm font-medium text-n-3">Name</label>
                                     <input 
                                         type="text" 
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         required 
                                         className="mt-1 block w-full p-2 bg-black/30 backdrop-blur-md border border-gray-700 rounded-md focus:outline-none focus:ring focus:ring-n-5" 
                                     />
@@ -31,6 +62,9 @@ const Contact = () => {
                                     <label className="block text-sm font-medium text-n-3">Email</label>
                                     <input 
                                         type="email" 
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         required 
                                         className="mt-1 block w-full p-2 bg-black/30 backdrop-blur-md border border-gray-700 rounded-md focus:outline-none focus:ring focus:ring-n-5" 
                                     />
@@ -38,6 +72,9 @@ const Contact = () => {
                                 <div>
                                     <label className="block text-sm font-medium text-n-3">Message</label>
                                     <textarea 
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         required 
                                         rows={4} 
                                         className="mt-1 block w-full p-2 bg-black/30 backdrop-blur-md border border-gray-700 rounded-md focus:outline-none focus:ring focus:ring-n-5" 
@@ -50,6 +87,7 @@ const Contact = () => {
                                     Send Message
                                 </button>
                             </form>
+                            {status && <p className="mt-4 text-sm text-green-500">{status}</p>}
                         </div>
                     </div>
 
@@ -65,7 +103,7 @@ const Contact = () => {
                             <ul className="body-2">
                                 <li className="flex items-start py-2">
                                     <strong className="w-24 text-n-3">Name:</strong>
-                                    <span>Ceriture</span>
+                                    <span>Ceriture (PVT) LTD</span>
                                 </li>
                                 <li className="flex items-start py-2">
                                     <strong className="w-24 text-n-3">Email:</strong>
@@ -87,7 +125,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </Section>
     );
