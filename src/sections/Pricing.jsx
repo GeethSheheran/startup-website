@@ -7,6 +7,9 @@ import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
 import image4 from "../assets/4.png";
+import image5 from "../assets/5.png";
+import image6 from "../assets/6.png";
+import image7 from "../assets/7.png";
 
 const pricing = [
     {
@@ -32,6 +35,24 @@ const pricing = [
         image: image3, 
         description: "Ibex Films is a videography team that creates high-quality visual content, specializing in storytelling through cinematic techniques for various projects.",
         link: "https://example.com/ultimate", 
+    },
+    {
+        title: "Enterprise",
+        image: image5, 
+        description: "The crypto gaming experience with P2E (play to earn) adventures along the way. With its NFTS you can be part of the community.",
+        link: "https://cheery-seahorse-e3e2e7.netlify.app", 
+    },
+    {
+        title: "Ultimate",
+        image: image6, 
+        description: "YooGoo is a supply of 3333 'YooGoo' and one of the most exciting upcoming Metaverse P2E game where only NFT holders can participate in the game.",
+        link: "https://yoogoo.netlify.app", 
+    },
+    {
+        title: "Ultimate",
+        image: image7, 
+        description: "Prasara Washing Plant (PVT) LTD has consistently progressed and evolved, establishing its position as a leading washing plant in the Apparel Sector",
+        link: "https://www.prasarawashing.lk/", 
     },
 ];
 
