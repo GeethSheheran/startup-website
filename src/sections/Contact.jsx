@@ -43,7 +43,7 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-      <div className="container">
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
         <Heading
           title="Contact Us"
           text="We're here to help! Reach out to us, and we'll get back to you promptly."
@@ -51,19 +51,19 @@ const Contact = () => {
 
         <div className="flex flex-wrap justify-between items-start gap-8 mt-12">
           {/* Left Card - Contact Form */}
-          <div className="relative z-1 flex-1 h-[30rem] p-8 border border-white/10 rounded-3xl overflow-hidden lg:p-10">
+          <div className="relative z-1 w-full lg:flex-1 h-[30rem] p-6 sm:p-8 lg:p-10 border border-white/10 rounded-3xl overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
               <img
                 className="w-full h-full object-cover"
                 width={800}
-                alt="Service 1"
                 height={730}
                 src={service1}
+                alt="Service 1"
               />
             </div>
 
             <div className="relative z-1 max-w-[40rem]">
-              <h4 className="h4 mb-4">Contact Us</h4>
+              <h4 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">Contact Us</h4>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm font-medium text-n-3">
@@ -118,63 +118,51 @@ const Contact = () => {
           </div>
 
           {/* Right Card - Contact Details with Background Image */}
-          <div className="relative z-1 flex-1 h-[30rem] p-8 border border-white/10 rounded-3xl overflow-hidden lg:p-10">
+          <div className="relative z-1 w-full lg:flex-1 h-[30rem] p-6 sm:p-8 lg:p-10 border border-white/10 rounded-3xl overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
               <img
                 className="w-full h-full object-cover"
                 width={800}
-                alt="Service 2"
                 height={730}
                 src={service2}
+                alt="Service 2"
               />
             </div>
 
             <div className="relative z-1 max-w-[30rem]">
-              <h4 className="h4 mb-4">Contact Details</h4>
-              <p className="body-2 mb-[2rem] text-n-3">
+              <h4 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">Contact Details</h4>
+              <p className="body-2 mb-6 text-n-3">
                 Reach out to us for inquiries or support. We are here to help
                 you unlock the full potential of your business.
               </p>
-              <ul className="body-2">
-                <li className="flex items-start py-2">
+              <ul className="space-y-2">
+                <li className="flex flex-col sm:flex-row items-start sm:items-center">
                   <strong className="w-24 text-n-3">Name:</strong>
                   <span>Certiure (PVT) LTD</span>
                 </li>
-                <li className="flex items-start py-2">
+                <li className="flex flex-col sm:flex-row items-start sm:items-center">
                   <strong className="w-24 text-n-3">Email:</strong>
-                  <a
-                    href="mailto:info@ceriture.com"
-                    className=" hover:underline"
-                  >
-                    info@ceriture.com
+                  <a href="mailto:info@certiure.com" className="hover:underline">
+                    info@certiure.com
                   </a>
                 </li>
-                <li className="flex items-start py-2">
+                <li className="flex flex-col sm:flex-row items-start sm:items-center">
                   <strong className="w-24 text-n-3">Contact:</strong>
                   <div>
-                    <a
-                      href="tel:+94763933730"
-                      className=" hover:underline"
-                    >
+                    <a href="tel:+94763933730" className="hover:underline">
                       (+94) 76 393 3730
                     </a>
                     <br />
-                    <a
-                      href="tel:+94765671421"
-                      className=" hover:underline"
-                    >
+                    <a href="tel:+94765671421" className="hover:underline">
                       (+94) 76 5671421
                     </a>
                     <br />
-                    <a
-                      href="tel:+94762196201"
-                      className=" hover:underline"
-                    >
+                    <a href="tel:+94762196201" className="hover:underline">
                       (+94) 76 2196201
                     </a>
                   </div>
                 </li>
-                <li className="flex items-start py-2">
+                <li className="flex flex-col sm:flex-row items-start sm:items-center">
                   <strong className="w-24 text-n-3">Address:</strong>
                   <span>
                     Negombo RD, Katuneriya, <br />

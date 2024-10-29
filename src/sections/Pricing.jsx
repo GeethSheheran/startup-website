@@ -1,8 +1,6 @@
 import Section from "../components/Section";
-import { smallSphere, stars, lines } from "../assets"; // Replace with appropriate paths for your images
+import { smallSphere, stars, lines } from "../assets";
 import Heading from "../components/Heading";
-
-// Import images directly or dynamically
 import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
@@ -25,31 +23,31 @@ const pricing = [
         link: "https://assetavenue.capital", 
     },
     {
-        title: "Enterprise",
+        title: "Cultural Experience",
         image: image4, 
         description: "Sokari is a virtual platform that brings Sri Lankan folklore and culture to life through interactive digital experiences.",
         link: "https://sokari.click", 
     },
     {
-        title: "Ultimate",
+        title: "Creative Videography",
         image: image3, 
         description: "Ibex Films is a videography team that creates high-quality visual content, specializing in storytelling through cinematic techniques for various projects.",
-        link: "https://example.com/ultimate", 
+        link: "https://ibex.netlify.app/", 
     },
     {
-        title: "Enterprise",
+        title: "Gaming Adventure",
         image: image5, 
-        description: "The crypto gaming experience with P2E (play to earn) adventures along the way. With its NFTS you can be part of the community.",
+        description: "A crypto gaming experience with P2E (play to earn) adventures along the way. With its NFTs, you can be part of the community.",
         link: "https://cheery-seahorse-e3e2e7.netlify.app", 
     },
     {
-        title: "Ultimate",
+        title: "Metaverse Game",
         image: image6, 
-        description: "YooGoo is a supply of 3333 'YooGoo' and one of the most exciting upcoming Metaverse P2E game where only NFT holders can participate in the game.",
+        description: "YooGoo is a supply of 3333 'YooGoo' NFTs and one of the most exciting upcoming Metaverse P2E games where only NFT holders can participate in the game.",
         link: "https://yoogoo.netlify.app", 
     },
     {
-        title: "Ultimate",
+        title: "Apparel Industry",
         image: image7, 
         description: "Prasara Washing Plant (PVT) LTD has consistently progressed and evolved, establishing its position as a leading washing plant in the Apparel Sector",
         link: "https://www.prasarawashing.lk/", 
@@ -61,26 +59,26 @@ const Pricing = () => {
         <Section className="overflow-hidden" id="our-project">
             <div className="container relative z-2">
                 <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
-                    <img src={smallSphere} className="relative z-1" width={255} height={255} alt="" />
+                    <img src={smallSphere} className="relative z-1" width={255} height={255} alt="decorative sphere" />
                     <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                        <img src={stars} className="w-full" width={950} height={400} alt="" />
+                        <img src={stars} className="w-full" width={950} height={400} alt="star decoration" />
                     </div>
                 </div>
 
                 <Heading tag="Get started with Certiure" title="Our Projects" />
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+                <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
                     {pricing.map((item, i) => (
                         <a
                             key={i}
                             href={item.link}
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="relative group w-full h-[20rem] bg-n-8 border border-n-6 rounded-[2rem] overflow-hidden flex flex-col justify-center items-center"
+                            className="relative group w-[100%] sm:w-[48%] lg:w-[23%] h-[20rem] bg-n-8 border border-n-6 rounded-[2rem] overflow-hidden flex flex-col justify-center items-center"
                         >
                             <img
                                 src={item.image}
-                                alt={item.title}
+                                alt={item.description.slice(0, 100)}
                                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                             />
 
@@ -92,10 +90,10 @@ const Pricing = () => {
                 </div>
 
                 <div className="hidden lg:block absolute top-1/2 right-full w-[92.5rem] h-[11.0625rem] -translate-y-1/2 pointer-events-none">
-                    <img className="w-full" src={lines} width={1480} height={177} alt="" />
+                    <img className="w-full" src={lines} width={1480} height={177} alt="decorative lines" />
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full w-[92.5rem] h-[11.0625rem] -translate-y-1/2 -scale-x-100 pointer-events-none">
-                    <img className="w-full" src={lines} width={1480} height={177} alt="" />
+                    <img className="w-full" src={lines} width={1480} height={177} alt="decorative lines flipped" />
                 </div>
 
                 <div className="flex justify-center mt-10">
